@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" alignment="left" text="Trips" textAlignment="center" id="5JY-Gy-lCl">
+                            <color key="textColor" red="0.2901960784" green="0.59607843140000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="MBU-Q7-wwR">
+                            <items>
+                                <tableRow identifier="tripRow" id="b4u-dA-Hln" customClass="TripsTableRow">
+                                    <group key="rootItem" width="1" alignment="left" id="krL-rv-1Ac">
+                                        <items>
+                                            <label width="1" alignment="center" verticalAlignment="center" text="TripName" numberOfLines="0" id="WQg-b0-Wlr"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.29019607843137257" green="0.59607843137254901" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="tripNameLabel" destination="WQg-b0-Wlr" id="UXN-W4-Gd0"/>
+                                        <segue destination="mzd-ar-siV" kind="push" identifier="tableToDetails" id="sSl-co-88i"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tripsInterfaceTable" destination="MBU-Q7-wwR" id="7bZ-kG-Qp7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="171" y="347"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="F5H-Cl-qNC">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="mzd-ar-siV" customClass="DetailInterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="Trip Name" textAlignment="center" numberOfLines="0" id="fzV-PD-MQ8">
+                            <color key="textColor" red="0.29019607843137252" green="0.59607843137254901" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <map height="60" alignment="left" id="Klt-Qu-bej"/>
+                        <label width="1" alignment="left" text="0 Days" textAlignment="center" id="VpF-d7-PsR"/>
+                        <label width="1" alignment="left" text="0 Activities" textAlignment="center" id="OaO-CS-M0M"/>
+                    </items>
+                    <connections>
+                        <outlet property="activitiesLabel" destination="OaO-CS-M0M" id="IGO-Re-QqJ"/>
+                        <outlet property="daysLabel" destination="VpF-d7-PsR" id="Vh8-GG-LXk"/>
+                        <outlet property="mapView" destination="Klt-Qu-bej" id="qzQ-y7-ZGd"/>
+                        <outlet property="namelLabel" destination="fzV-PD-MQ8" id="T39-9C-4eo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="456" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" contentMode="scaleAspectFill" id="t8f-Gd-c4y"/>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="1" height="24" alignment="left" text="Trips" textAlignment="center" id="ZCQ-GJ-LJE">
+                                    <color key="textColor" red="0.2901960784" green="0.59607843140000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="1" height="24" alignment="left" text="Total Days" textAlignment="center" id="HcA-Jf-vPW">
+                                    <color key="textColor" red="0.2901960784" green="0.59607843140000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="lblDaysAmount" destination="HcA-Jf-vPW" id="wb0-rb-V0z"/>
+                        <outlet property="lblTripsAmount" destination="ZCQ-GJ-LJE" id="eTT-Lx-7bJ"/>
+                        <outlet property="titleGroup" destination="t8f-Gd-c4y" id="ggo-I2-bDu"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="XkS-y5-khE">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="finishNotification" wantsSashBlur="YES" id="JfB-70-Muf">
+                        <color key="titleColor" red="0.29019607843137257" green="0.59607843137254901" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController">
+                    <items>
+                        <label alignment="center" text="Alert body" numberOfLines="0" id="Qzu-wR-0aq"/>
+                        <map height="40" alignment="left" id="miN-Us-ocy"/>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="mapView" destination="miN-Us-ocy" id="WQo-GF-WWQ"/>
+                        <outlet property="textLabel" destination="Qzu-wR-0aq" id="ans-K8-G4d"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="475" y="1001"/>
+        </scene>
+    </scenes>
+</document>

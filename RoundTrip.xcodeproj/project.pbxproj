@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3454A35E1B0F6512000ECC0C /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3454A35D1B0F6512000ECC0C /* NotificationController.m */; };
+		3454A3611B0F6512000ECC0C /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3454A3601B0F6512000ECC0C /* GlanceController.m */; };
+		3454A3631B0F6512000ECC0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3454A3621B0F6512000ECC0C /* Images.xcassets */; };
+		3454A3671B0F6512000ECC0C /* RoundTrip WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 3454A3661B0F6512000ECC0C /* RoundTrip WatchKit App.app */; };
+		3454A36F1B0F6512000ECC0C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3454A36D1B0F6512000ECC0C /* Interface.storyboard */; };
+		3454A3711B0F6512000ECC0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3454A3701B0F6512000ECC0C /* Images.xcassets */; };
+		3454A3741B0F6512000ECC0C /* RoundTrip WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3454A3541B0F6512000ECC0C /* RoundTrip WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3454A37E1B0F6751000ECC0C /* WatchDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3454A37D1B0F6751000ECC0C /* WatchDataManager.m */; };
+		345541BF1B136271008B02CD /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345541BE1B136271008B02CD /* InterfaceController.m */; };
+		3469725E1B14E15900E70649 /* DetailInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3469725D1B14E15900E70649 /* DetailInterfaceController.m */; };
+		34C1BF791B0F582A00CB73D5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C1BF781B0F582A00CB73D5 /* DataManager.m */; };
+		34D42C871B14AE0300891987 /* TripsTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D42C861B14AE0300891987 /* TripsTableRow.m */; };
+		34FD09341ADBF2E8003F4C3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FD09331ADBF2E8003F4C3E /* MapKit.framework */; };
+		7AE70D771AC02FCC003D5092 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE70D761AC02FCC003D5092 /* main.m */; };
+		7AE70D7A1AC02FCC003D5092 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE70D791AC02FCC003D5092 /* AppDelegate.m */; };
+		7AE70D7D1AC02FCC003D5092 /* RoundTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AE70D7B1AC02FCC003D5092 /* RoundTrip.xcdatamodeld */; };
+		7AE70D831AC02FCC003D5092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE70D811AC02FCC003D5092 /* Main.storyboard */; };
+		7AE70D851AC02FCC003D5092 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE70D841AC02FCC003D5092 /* Images.xcassets */; };
+		7AE70D881AC02FCC003D5092 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE70D861AC02FCC003D5092 /* LaunchScreen.xib */; };
+		8F10D6011AF01E3100D707DA /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10D6001AF01E3100D707DA /* Trip.m */; };
+		8F2ED7911ADAE14700F98F89 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2ED7901ADAE14700F98F89 /* DestinationViewController.m */; };
+		8F78180E1B058FBA000C7F18 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F78180D1B058FBA000C7F18 /* ActivityTableViewCell.m */; };
+		EE0322E31ADC358900E45A29 /* mapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0322E21ADC358900E45A29 /* mapKitViewController.m */; };
+		EE0322E51ADC360500E45A29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0322E41ADC360400E45A29 /* CoreLocation.framework */; };
+		EE0322E71ADC360D00E45A29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0322E61ADC360D00E45A29 /* UIKit.framework */; };
+		EE0322E91ADC361B00E45A29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0322E81ADC361B00E45A29 /* Foundation.framework */; };
+		EE0322EB1ADC362400E45A29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0322EA1ADC362400E45A29 /* CoreGraphics.framework */; };
+		EE1AF0171ADD3A4C00336C4F /* CategoriTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1AF0141ADD3A4C00336C4F /* CategoriTableViewCell.m */; };
+		EE1AF0181ADD3A4C00336C4F /* CategoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1AF0161ADD3A4C00336C4F /* CategoriasViewController.m */; };
+		EE1AF01E1ADD3B6000336C4F /* Ponto.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1AF01C1ADD3B6000336C4F /* Ponto.m */; };
+		EE3C66731AC48D1900175798 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C66721AC48D1900175798 /* QuartzCore.framework */; };
+		EED8F5011ACB279100EBC6EF /* DisplayActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5001ACB279100EBC6EF /* DisplayActivitiesViewController.m */; };
+		EED8F5091ACB27C000EBC6EF /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5041ACB27C000EBC6EF /* Activity.m */; };
+		EED8F50B1ACB27C000EBC6EF /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5081ACB27C000EBC6EF /* Day.m */; };
+		EED8F5151ACB27F000EBC6EF /* CreateTripTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F50E1ACB27F000EBC6EF /* CreateTripTableViewCell.m */; };
+		EED8F5161ACB27F000EBC6EF /* CreateTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5101ACB27F000EBC6EF /* CreateTripViewController.m */; };
+		EED8F5171ACB27F000EBC6EF /* IconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5121ACB27F000EBC6EF /* IconViewController.m */; };
+		EED8F5181ACB27F000EBC6EF /* PickFlagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5141ACB27F000EBC6EF /* PickFlagTableViewCell.m */; };
+		EED8F52F1ACB285900EBC6EF /* TripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F52C1ACB285900EBC6EF /* TripsViewController.m */; };
+		EED8F5301ACB285900EBC6EF /* TripsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F52E1ACB285900EBC6EF /* TripsTableViewCell.m */; };
+		EED8F5381ACB287C00EBC6EF /* TripDaysCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5331ACB287C00EBC6EF /* TripDaysCollectionViewCell.m */; };
+		EED8F5391ACB287C00EBC6EF /* TripDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5351ACB287C00EBC6EF /* TripDetailTableViewCell.m */; };
+		EED8F53A1ACB287C00EBC6EF /* TripDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED8F5371ACB287C00EBC6EF /* TripDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3454A3681B0F6512000ECC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE70D691AC02FCC003D5092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3454A3651B0F6512000ECC0C;
+			remoteInfo = "RoundTrip WatchKit App";
+		};
+		3454A3721B0F6512000ECC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE70D691AC02FCC003D5092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3454A3531B0F6512000ECC0C;
+			remoteInfo = "RoundTrip WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3454A37B1B0F6513000ECC0C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3454A3741B0F6512000ECC0C /* RoundTrip WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3454A3541B0F6512000ECC0C /* RoundTrip WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RoundTrip WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3454A3571B0F6512000ECC0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3454A3581B0F6512000ECC0C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3454A3591B0F6512000ECC0C /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		3454A35C1B0F6512000ECC0C /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		3454A35D1B0F6512000ECC0C /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		3454A35F1B0F6512000ECC0C /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		3454A3601B0F6512000ECC0C /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		3454A3621B0F6512000ECC0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3454A3661B0F6512000ECC0C /* RoundTrip WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RoundTrip WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3454A36C1B0F6512000ECC0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3454A36E1B0F6512000ECC0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3454A3701B0F6512000ECC0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3454A37C1B0F6751000ECC0C /* WatchDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchDataManager.h; sourceTree = "<group>"; };
+		3454A37D1B0F6751000ECC0C /* WatchDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchDataManager.m; sourceTree = "<group>"; };
+		345541BC1B1360F2008B02CD /* RoundTrip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RoundTrip.entitlements; sourceTree = "<group>"; };
+		345541BD1B136103008B02CD /* RoundTrip WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "RoundTrip WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		345541BE1B136271008B02CD /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		3469725C1B14E15900E70649 /* DetailInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInterfaceController.h; sourceTree = "<group>"; };
+		3469725D1B14E15900E70649 /* DetailInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailInterfaceController.m; sourceTree = "<group>"; };
+		34C1BF771B0F582A00CB73D5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		34C1BF781B0F582A00CB73D5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		34D42C851B14AE0300891987 /* TripsTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsTableRow.h; sourceTree = "<group>"; };
+		34D42C861B14AE0300891987 /* TripsTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsTableRow.m; sourceTree = "<group>"; };
+		34FD09331ADBF2E8003F4C3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7AE70D711AC02FCC003D5092 /* RoundTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE70D751AC02FCC003D5092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE70D761AC02FCC003D5092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AE70D781AC02FCC003D5092 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AE70D791AC02FCC003D5092 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AE70D7C1AC02FCC003D5092 /* RoundTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoundTrip.xcdatamodel; sourceTree = "<group>"; };
+		7AE70D821AC02FCC003D5092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AE70D841AC02FCC003D5092 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7AE70D871AC02FCC003D5092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7AE70D921AC02FCC003D5092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE70D931AC02FCC003D5092 /* RoundTripTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundTripTests.m; sourceTree = "<group>"; };
+		8F10D5FF1AF01E3100D707DA /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		8F10D6001AF01E3100D707DA /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		8F2ED78F1ADAE14700F98F89 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
+		8F2ED7901ADAE14700F98F89 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
+		8F78180C1B058FBA000C7F18 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
+		8F78180D1B058FBA000C7F18 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
+		EE0322E11ADC358900E45A29 /* mapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapKitViewController.h; sourceTree = "<group>"; };
+		EE0322E21ADC358900E45A29 /* mapKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapKitViewController.m; sourceTree = "<group>"; };
+		EE0322E41ADC360400E45A29 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EE0322E61ADC360D00E45A29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE0322E81ADC361B00E45A29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE0322EA1ADC362400E45A29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE1AF0131ADD3A4C00336C4F /* CategoriTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriTableViewCell.h; sourceTree = "<group>"; };
+		EE1AF0141ADD3A4C00336C4F /* CategoriTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriTableViewCell.m; sourceTree = "<group>"; };
+		EE1AF0151ADD3A4C00336C4F /* CategoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriasViewController.h; sourceTree = "<group>"; };
+		EE1AF0161ADD3A4C00336C4F /* CategoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriasViewController.m; sourceTree = "<group>"; };
+		EE1AF01B1ADD3B6000336C4F /* Ponto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ponto.h; sourceTree = "<group>"; };
+		EE1AF01C1ADD3B6000336C4F /* Ponto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ponto.m; sourceTree = "<group>"; };
+		EE3C66721AC48D1900175798 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EED8F4FF1ACB279100EBC6EF /* DisplayActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayActivitiesViewController.h; sourceTree = "<group>"; };
+		EED8F5001ACB279100EBC6EF /* DisplayActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayActivitiesViewController.m; sourceTree = "<group>"; };
+		EED8F5031ACB27C000EBC6EF /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		EED8F5041ACB27C000EBC6EF /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		EED8F5071ACB27C000EBC6EF /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
+		EED8F5081ACB27C000EBC6EF /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
+		EED8F50D1ACB27F000EBC6EF /* CreateTripTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTripTableViewCell.h; sourceTree = "<group>"; };
+		EED8F50E1ACB27F000EBC6EF /* CreateTripTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTripTableViewCell.m; sourceTree = "<group>"; };
+		EED8F50F1ACB27F000EBC6EF /* CreateTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTripViewController.h; sourceTree = "<group>"; };
+		EED8F5101ACB27F000EBC6EF /* CreateTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTripViewController.m; sourceTree = "<group>"; };
+		EED8F5111ACB27F000EBC6EF /* IconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconViewController.h; sourceTree = "<group>"; };
+		EED8F5121ACB27F000EBC6EF /* IconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconViewController.m; sourceTree = "<group>"; };
+		EED8F5131ACB27F000EBC6EF /* PickFlagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickFlagTableViewCell.h; sourceTree = "<group>"; };
+		EED8F5141ACB27F000EBC6EF /* PickFlagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickFlagTableViewCell.m; sourceTree = "<group>"; };
+		EED8F52B1ACB285900EBC6EF /* TripsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsViewController.h; sourceTree = "<group>"; };
+		EED8F52C1ACB285900EBC6EF /* TripsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsViewController.m; sourceTree = "<group>"; };
+		EED8F52D1ACB285900EBC6EF /* TripsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsTableViewCell.h; sourceTree = "<group>"; };
+		EED8F52E1ACB285900EBC6EF /* TripsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsTableViewCell.m; sourceTree = "<group>"; };
+		EED8F5321ACB287C00EBC6EF /* TripDaysCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDaysCollectionViewCell.h; sourceTree = "<group>"; };
+		EED8F5331ACB287C00EBC6EF /* TripDaysCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDaysCollectionViewCell.m; sourceTree = "<group>"; };
+		EED8F5341ACB287C00EBC6EF /* TripDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDetailTableViewCell.h; sourceTree = "<group>"; };
+		EED8F5351ACB287C00EBC6EF /* TripDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDetailTableViewCell.m; sourceTree = "<group>"; };
+		EED8F5361ACB287C00EBC6EF /* TripDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDetailViewController.h; sourceTree = "<group>"; };
+		EED8F5371ACB287C00EBC6EF /* TripDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3454A3511B0F6512000ECC0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE70D6E1AC02FCC003D5092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0322EB1ADC362400E45A29 /* CoreGraphics.framework in Frameworks */,
+				EE0322E91ADC361B00E45A29 /* Foundation.framework in Frameworks */,
+				EE0322E71ADC360D00E45A29 /* UIKit.framework in Frameworks */,
+				EE0322E51ADC360500E45A29 /* CoreLocation.framework in Frameworks */,
+				34FD09341ADBF2E8003F4C3E /* MapKit.framework in Frameworks */,
+				EE3C66731AC48D1900175798 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3454A3551B0F6512000ECC0C /* RoundTrip WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				345541BD1B136103008B02CD /* RoundTrip WatchKit Extension.entitlements */,
+				3469725C1B14E15900E70649 /* DetailInterfaceController.h */,
+				3469725D1B14E15900E70649 /* DetailInterfaceController.m */,
+				3454A37C1B0F6751000ECC0C /* WatchDataManager.h */,
+				3454A37D1B0F6751000ECC0C /* WatchDataManager.m */,
+				3454A3591B0F6512000ECC0C /* InterfaceController.h */,
+				345541BE1B136271008B02CD /* InterfaceController.m */,
+				3454A35C1B0F6512000ECC0C /* NotificationController.h */,
+				3454A35D1B0F6512000ECC0C /* NotificationController.m */,
+				3454A35F1B0F6512000ECC0C /* GlanceController.h */,
+				3454A3601B0F6512000ECC0C /* GlanceController.m */,
+				34D42C851B14AE0300891987 /* TripsTableRow.h */,
+				34D42C861B14AE0300891987 /* TripsTableRow.m */,
+				3454A3621B0F6512000ECC0C /* Images.xcassets */,
+				3454A3561B0F6512000ECC0C /* Supporting Files */,
+			);
+			path = "RoundTrip WatchKit Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+		3454A3561B0F6512000ECC0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3454A3571B0F6512000ECC0C /* Info.plist */,
+				3454A3581B0F6512000ECC0C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3454A36A1B0F6512000ECC0C /* RoundTrip WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3454A36D1B0F6512000ECC0C /* Interface.storyboard */,
+				3454A3701B0F6512000ECC0C /* Images.xcassets */,
+				3454A36B1B0F6512000ECC0C /* Supporting Files */,
+			);
+			path = "RoundTrip WatchKit App";
+			sourceTree = SOURCE_ROOT;
+		};
+		3454A36B1B0F6512000ECC0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3454A36C1B0F6512000ECC0C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		349CC1F51AC43B14008C3F16 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EE0322E11ADC358900E45A29 /* mapKitViewController.h */,
+				EE0322E21ADC358900E45A29 /* mapKitViewController.m */,
+				EE1AF01B1ADD3B6000336C4F /* Ponto.h */,
+				EE1AF01C1ADD3B6000336C4F /* Ponto.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		7A6BE9751ADD7F6300D1AACF /* AddActivity */ = {
+			isa = PBXGroup;
+			children = (
+				EED8F4FF1ACB279100EBC6EF /* DisplayActivitiesViewController.h */,
+				EED8F5001ACB279100EBC6EF /* DisplayActivitiesViewController.m */,
+				8F78180C1B058FBA000C7F18 /* ActivityTableViewCell.h */,
+				8F78180D1B058FBA000C7F18 /* ActivityTableViewCell.m */,
+			);
+			name = AddActivity;
+			sourceTree = "<group>";
+		};
+		7AE70D681AC02FCC003D5092 = {
+			isa = PBXGroup;
+			children = (
+				EE1AF0121ADD30BC00336C4F /* Frameworks */,
+				7AE70D731AC02FCC003D5092 /* RoundTrip */,
+				3454A3551B0F6512000ECC0C /* RoundTrip WatchKit Extension */,
+				3454A36A1B0F6512000ECC0C /* RoundTrip WatchKit App */,
+				7AE70D901AC02FCC003D5092 /* RoundTripTests */,
+				7AE70D721AC02FCC003D5092 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AE70D721AC02FCC003D5092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE70D711AC02FCC003D5092 /* RoundTrip.app */,
+				3454A3541B0F6512000ECC0C /* RoundTrip WatchKit Extension.appex */,
+				3454A3661B0F6512000ECC0C /* RoundTrip WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE70D731AC02FCC003D5092 /* RoundTrip */ = {
+			isa = PBXGroup;
+			children = (
+				345541BC1B1360F2008B02CD /* RoundTrip.entitlements */,
+				7AE70D781AC02FCC003D5092 /* AppDelegate.h */,
+				7AE70D791AC02FCC003D5092 /* AppDelegate.m */,
+				EED8F5021ACB27B100EBC6EF /* Models */,
+				EED8F52A1ACB283F00EBC6EF /* Home */,
+				EED8F50C1ACB27DC00EBC6EF /* CreateTrip */,
+				8F10DC341AD33BA8003CB3A0 /* SelectDestination */,
+				8F2ED7931ADAED2500F98F89 /* SelectIcon */,
+				EED8F5311ACB286B00EBC6EF /* TripDetail */,
+				8F78180B1B05506B000C7F18 /* Categories */,
+				7A6BE9751ADD7F6300D1AACF /* AddActivity */,
+				349CC1F51AC43B14008C3F16 /* Map */,
+				7AE70D811AC02FCC003D5092 /* Main.storyboard */,
+				7AE70D841AC02FCC003D5092 /* Images.xcassets */,
+				7AE70D861AC02FCC003D5092 /* LaunchScreen.xib */,
+				7AE70D7B1AC02FCC003D5092 /* RoundTrip.xcdatamodeld */,
+				7AE70D741AC02FCC003D5092 /* Supporting Files */,
+			);
+			path = RoundTrip;
+			sourceTree = "<group>";
+		};
+		7AE70D741AC02FCC003D5092 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE70D751AC02FCC003D5092 /* Info.plist */,
+				7AE70D761AC02FCC003D5092 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AE70D901AC02FCC003D5092 /* RoundTripTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE70D931AC02FCC003D5092 /* RoundTripTests.m */,
+				7AE70D911AC02FCC003D5092 /* Supporting Files */,
+			);
+			path = RoundTripTests;
+			sourceTree = "<group>";
+		};
+		7AE70D911AC02FCC003D5092 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE70D921AC02FCC003D5092 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F10DC341AD33BA8003CB3A0 /* SelectDestination */ = {
+			isa = PBXGroup;
+			children = (
+				8F2ED78F1ADAE14700F98F89 /* DestinationViewController.h */,
+				8F2ED7901ADAE14700F98F89 /* DestinationViewController.m */,
+			);
+			name = SelectDestination;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8F2ED7931ADAED2500F98F89 /* SelectIcon */ = {
+			isa = PBXGroup;
+			children = (
+				EED8F5111ACB27F000EBC6EF /* IconViewController.h */,
+				EED8F5121ACB27F000EBC6EF /* IconViewController.m */,
+				EED8F5131ACB27F000EBC6EF /* PickFlagTableViewCell.h */,
+				EED8F5141ACB27F000EBC6EF /* PickFlagTableViewCell.m */,
+			);
+			name = SelectIcon;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8F78180B1B05506B000C7F18 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE1AF0131ADD3A4C00336C4F /* CategoriTableViewCell.h */,
+				EE1AF0141ADD3A4C00336C4F /* CategoriTableViewCell.m */,
+				EE1AF0151ADD3A4C00336C4F /* CategoriasViewController.h */,
+				EE1AF0161ADD3A4C00336C4F /* CategoriasViewController.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		EE1AF0121ADD30BC00336C4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE3C66721AC48D1900175798 /* QuartzCore.framework */,
+				34FD09331ADBF2E8003F4C3E /* MapKit.framework */,
+				EE0322EA1ADC362400E45A29 /* CoreGraphics.framework */,
+				EE0322E81ADC361B00E45A29 /* Foundation.framework */,
+				EE0322E61ADC360D00E45A29 /* UIKit.framework */,
+				EE0322E41ADC360400E45A29 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED8F5021ACB27B100EBC6EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F10D5FF1AF01E3100D707DA /* Trip.h */,
+				8F10D6001AF01E3100D707DA /* Trip.m */,
+				EED8F5031ACB27C000EBC6EF /* Activity.h */,
+				EED8F5041ACB27C000EBC6EF /* Activity.m */,
+				EED8F5071ACB27C000EBC6EF /* Day.h */,
+				EED8F5081ACB27C000EBC6EF /* Day.m */,
+				34C1BF771B0F582A00CB73D5 /* DataManager.h */,
+				34C1BF781B0F582A00CB73D5 /* DataManager.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EED8F50C1ACB27DC00EBC6EF /* CreateTrip */ = {
+			isa = PBXGroup;
+			children = (
+				EED8F50D1ACB27F000EBC6EF /* CreateTripTableViewCell.h */,
+				EED8F50E1ACB27F000EBC6EF /* CreateTripTableViewCell.m */,
+				EED8F50F1ACB27F000EBC6EF /* CreateTripViewController.h */,
+				EED8F5101ACB27F000EBC6EF /* CreateTripViewController.m */,
+			);
+			name = CreateTrip;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EED8F52A1ACB283F00EBC6EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EED8F52B1ACB285900EBC6EF /* TripsViewController.h */,
+				EED8F52C1ACB285900EBC6EF /* TripsViewController.m */,
+				EED8F52D1ACB285900EBC6EF /* TripsTableViewCell.h */,
+				EED8F52E1ACB285900EBC6EF /* TripsTableViewCell.m */,
+			);
+			name = Home;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EED8F5311ACB286B00EBC6EF /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EED8F5321ACB287C00EBC6EF /* TripDaysCollectionViewCell.h */,
+				EED8F5331ACB287C00EBC6EF /* TripDaysCollectionViewCell.m */,
+				EED8F5341ACB287C00EBC6EF /* TripDetailTableViewCell.h */,
+				EED8F5351ACB287C00EBC6EF /* TripDetailTableViewCell.m */,
+				EED8F5361ACB287C00EBC6EF /* TripDetailViewController.h */,
+				EED8F5371ACB287C00EBC6EF /* TripDetailViewController.m */,
+			);
+			name = TripDetail;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3454A3531B0F6512000ECC0C /* RoundTrip WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3454A37A1B0F6513000ECC0C /* Build configuration list for PBXNativeTarget "RoundTrip WatchKit Extension" */;
+			buildPhases = (
+				3454A3501B0F6512000ECC0C /* Sources */,
+				3454A3511B0F6512000ECC0C /* Frameworks */,
+				3454A3521B0F6512000ECC0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3454A3691B0F6512000ECC0C /* PBXTargetDependency */,
+			);
+			name = "RoundTrip WatchKit Extension";
+			productName = "RoundTrip WatchKit Extension";
+			productReference = 3454A3541B0F6512000ECC0C /* RoundTrip WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		3454A3651B0F6512000ECC0C /* RoundTrip WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3454A3791B0F6513000ECC0C /* Build configuration list for PBXNativeTarget "RoundTrip WatchKit App" */;
+			buildPhases = (
+				3454A3641B0F6512000ECC0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RoundTrip WatchKit App";
+			productName = "RoundTrip WatchKit App";
+			productReference = 3454A3661B0F6512000ECC0C /* RoundTrip WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		7AE70D701AC02FCC003D5092 /* RoundTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE70D971AC02FCC003D5092 /* Build configuration list for PBXNativeTarget "RoundTrip" */;
+			buildPhases = (
+				7AE70D6D1AC02FCC003D5092 /* Sources */,
+				7AE70D6E1AC02FCC003D5092 /* Frameworks */,
+				7AE70D6F1AC02FCC003D5092 /* Resources */,
+				3454A37B1B0F6513000ECC0C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3454A3731B0F6512000ECC0C /* PBXTargetDependency */,
+			);
+			name = RoundTrip;
+			productName = RoundTrip;
+			productReference = 7AE70D711AC02FCC003D5092 /* RoundTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AE70D691AC02FCC003D5092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Luis Filipe Novo Campani da Silva";
+				TargetAttributes = {
+					3454A3531B0F6512000ECC0C = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = YK3NXBF7NQ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					3454A3651B0F6512000ECC0C = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = YK3NXBF7NQ;
+					};
+					7AE70D701AC02FCC003D5092 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = YK3NXBF7NQ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7AE70D6C1AC02FCC003D5092 /* Build configuration list for PBXProject "RoundTrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				en_GB,
+				es,
+				fi,
+				fr,
+				he,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				no,
+				pl,
+				pt,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				zh_CN,
+				zh_TW,
+			);
+			mainGroup = 7AE70D681AC02FCC003D5092;
+			productRefGroup = 7AE70D721AC02FCC003D5092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AE70D701AC02FCC003D5092 /* RoundTrip */,
+				3454A3531B0F6512000ECC0C /* RoundTrip WatchKit Extension */,
+				3454A3651B0F6512000ECC0C /* RoundTrip WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3454A3521B0F6512000ECC0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3454A3671B0F6512000ECC0C /* RoundTrip WatchKit App.app in Resources */,
+				3454A3631B0F6512000ECC0C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3454A3641B0F6512000ECC0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3454A36F1B0F6512000ECC0C /* Interface.storyboard in Resources */,
+				3454A3711B0F6512000ECC0C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE70D6F1AC02FCC003D5092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE70D831AC02FCC003D5092 /* Main.storyboard in Resources */,
+				7AE70D881AC02FCC003D5092 /* LaunchScreen.xib in Resources */,
+				7AE70D851AC02FCC003D5092 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3454A3501B0F6512000ECC0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3454A35E1B0F6512000ECC0C /* NotificationController.m in Sources */,
+				345541BF1B136271008B02CD /* InterfaceController.m in Sources */,
+				3454A37E1B0F6751000ECC0C /* WatchDataManager.m in Sources */,
+				34D42C871B14AE0300891987 /* TripsTableRow.m in Sources */,
+				3469725E1B14E15900E70649 /* DetailInterfaceController.m in Sources */,
+				3454A3611B0F6512000ECC0C /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE70D6D1AC02FCC003D5092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F78180E1B058FBA000C7F18 /* ActivityTableViewCell.m in Sources */,
+				EED8F50B1ACB27C000EBC6EF /* Day.m in Sources */,
+				EED8F52F1ACB285900EBC6EF /* TripsViewController.m in Sources */,
+				8F10D6011AF01E3100D707DA /* Trip.m in Sources */,
+				EED8F5301ACB285900EBC6EF /* TripsTableViewCell.m in Sources */,
+				EE1AF01E1ADD3B6000336C4F /* Ponto.m in Sources */,
+				8F2ED7911ADAE14700F98F89 /* DestinationViewController.m in Sources */,
+				EE0322E31ADC358900E45A29 /* mapKitViewController.m in Sources */,
+				7AE70D7A1AC02FCC003D5092 /* AppDelegate.m in Sources */,
+				EE1AF0181ADD3A4C00336C4F /* CategoriasViewController.m in Sources */,
+				EED8F5011ACB279100EBC6EF /* DisplayActivitiesViewController.m in Sources */,
+				34C1BF791B0F582A00CB73D5 /* DataManager.m in Sources */,
+				7AE70D7D1AC02FCC003D5092 /* RoundTrip.xcdatamodeld in Sources */,
+				EED8F5161ACB27F000EBC6EF /* CreateTripViewController.m in Sources */,
+				EED8F5151ACB27F000EBC6EF /* CreateTripTableViewCell.m in Sources */,
+				7AE70D771AC02FCC003D5092 /* main.m in Sources */,
+				EED8F5171ACB27F000EBC6EF /* IconViewController.m in Sources */,
+				EED8F5391ACB287C00EBC6EF /* TripDetailTableViewCell.m in Sources */,
+				EED8F5091ACB27C000EBC6EF /* Activity.m in Sources */,
+				EED8F5181ACB27F000EBC6EF /* PickFlagTableViewCell.m in Sources */,
+				EED8F53A1ACB287C00EBC6EF /* TripDetailViewController.m in Sources */,
+				EED8F5381ACB287C00EBC6EF /* TripDaysCollectionViewCell.m in Sources */,
+				EE1AF0171ADD3A4C00336C4F /* CategoriTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3454A3691B0F6512000ECC0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3454A3651B0F6512000ECC0C /* RoundTrip WatchKit App */;
+			targetProxy = 3454A3681B0F6512000ECC0C /* PBXContainerItemProxy */;
+		};
+		3454A3731B0F6512000ECC0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3454A3531B0F6512000ECC0C /* RoundTrip WatchKit Extension */;
+			targetProxy = 3454A3721B0F6512000ECC0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3454A36D1B0F6512000ECC0C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3454A36E1B0F6512000ECC0C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE70D811AC02FCC003D5092 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE70D821AC02FCC003D5092 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE70D861AC02FCC003D5092 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE70D871AC02FCC003D5092 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3454A3751B0F6513000ECC0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RoundTrip WatchKit Extension/RoundTrip WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RoundTrip WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3454A3761B0F6513000ECC0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RoundTrip WatchKit Extension/RoundTrip WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "RoundTrip WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3454A3771B0F6513000ECC0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RoundTrip_WatchKit_Extension;
+				INFOPLIST_FILE = "RoundTrip WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		3454A3781B0F6513000ECC0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = RoundTrip_WatchKit_Extension;
+				INFOPLIST_FILE = "RoundTrip WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		7AE70D951AC02FCC003D5092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AE70D961AC02FCC003D5092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AE70D981AC02FCC003D5092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RoundTrip/RoundTrip.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2/GoogleMapsSDKDemos",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RoundTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AE70D991AC02FCC003D5092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RoundTrip/RoundTrip.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.2/GoogleMapsSDKDemos",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RoundTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3454A3791B0F6513000ECC0C /* Build configuration list for PBXNativeTarget "RoundTrip WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3454A3771B0F6513000ECC0C /* Debug */,
+				3454A3781B0F6513000ECC0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3454A37A1B0F6513000ECC0C /* Build configuration list for PBXNativeTarget "RoundTrip WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3454A3751B0F6513000ECC0C /* Debug */,
+				3454A3761B0F6513000ECC0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE70D6C1AC02FCC003D5092 /* Build configuration list for PBXProject "RoundTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE70D951AC02FCC003D5092 /* Debug */,
+				7AE70D961AC02FCC003D5092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE70D971AC02FCC003D5092 /* Build configuration list for PBXNativeTarget "RoundTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE70D981AC02FCC003D5092 /* Debug */,
+				7AE70D991AC02FCC003D5092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AE70D7B1AC02FCC003D5092 /* RoundTrip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AE70D7C1AC02FCC003D5092 /* RoundTrip.xcdatamodel */,
+			);
+			currentVersion = 7AE70D7C1AC02FCC003D5092 /* RoundTrip.xcdatamodel */;
+			path = RoundTrip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7AE70D691AC02FCC003D5092 /* Project object */;
+}

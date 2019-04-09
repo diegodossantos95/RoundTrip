@@ -1,0 +1,14 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Please finish your trip plan to Las Vegas! We are waiting for you!",
+            "title": "Optional title"
+        },
+        "category": "finishNotification"
+    },
+    
+    "lat": "36.1699412",
+    "lng": "-115.1398296",
+    
+    "customKey": "Please finish your trip plan, Las Vegas Weekend! We are waiting for you!"
+}
